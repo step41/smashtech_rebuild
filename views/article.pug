@@ -1,0 +1,68 @@
+extends layout
+
+block content
+
+	.container.content-padding
+		.row
+			.col-md-9
+				article.post-1048.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized
+					.featured-image
+						.post-thumbnail
+							img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image(src=pugDomainUrl + '/images/' + pugArticle.image, alt='')
+						// .post-thumbnail
+					.bread-title
+						h2.title
+							| #{pugArticle.title}
+						.clearfix
+					.entry-meta
+						p
+							small
+								i.fa.fa-calendar(aria-hidden='true')
+								|  Published on #{pugFormatDate(pugArticle.date_pub)}
+					.entry-content!= pugArticle.text
+					// .entry-content
+					.post-meta
+						// <p><small><i class="fa fa-pencil" aria-hidden="true"></i> Written by: #{pugArticle.author}</small></p>
+					// end post meta
+				.comments-template
+					// You can start editing here.
+					#commentsbox
+						#comment-form
+							#respond.comment-respond
+								h3#reply-title.comment-reply-title
+									| Leave a Reply 
+									small
+										a#cancel-comment-reply-link(rel='nofollow', href='/most-admired-ceos-sdbj/#respond', style='display:none;') Cancel reply
+								form#commentform.comment-form(method='post')
+									p.comment-notes
+										span#email-notes Your email address will not be published.
+										|  Required fields are marked 
+										span.required *
+									p.comment-form-comment
+										label(for='comment') Comment
+										textarea#comment(name='comment', cols='45', rows='8', maxlength='65525', aria-required='true', required='required')
+									p.comment-form-author
+										label(for='author')
+											| Name 
+											span.required *
+										input#author(name='author', type='text', value='', size='30', maxlength='245', aria-required='true', required='required')
+									p.comment-form-email
+										label(for='email')
+											| Email 
+											span.required *
+										input#email(name='email', type='text', value='', size='30', maxlength='100', aria-describedby='email-notes', aria-required='true', required='required')
+									p.comment-form-url
+										label(for='url') Website
+										input#url(name='url', type='text', value='', size='30', maxlength='200')
+									p.form-submit
+										input#submit.submit.btn.btn-lg.btn-outline-black(name='submit', type='button', value='Post Comment')
+							// #respond
+				// end comments template
+			// end col 9
+			#blog-sidebar.col-md-3.lt-grey-bg(role='complementary')
+				
+				include sidebar.pug
+
+			// end col 3
+		// end row
+

@@ -1,0 +1,44 @@
+[
+	{
+		"name_full": "Alex Dos Santos",
+		"image": "alex_thumbnail",
+		"position": "Media Buyer",
+		"quote": "Smashtech’s culture and vision is like no other. People come together and work tirelessly every day to make a positive change to the world of health and wellness! Smashtech is truly a BIG family and one that knows how to work hard and play hard! I love my Smash family!",
+		"order": 1
+	},
+	{
+		"name_full": "Roger Sanchez",
+		"image": "roger_thumbnail",
+		"position": "Front End Web Developer",
+		"quote": "I’m super happy to work for a company that cares about your professional and personal growth. The founders and the leadership team are one of a kind. I can’t imagine myself anywhere else. Best organization I have worked for.",
+		"order": 2
+	},
+	{
+		"name_full": "Kayla Hodgson",
+		"image": "kayla_thumbnail",
+		"position": "Executive Administrative Assistant",
+		"quote": "There are a million great things I could say about Smashtech, but the number one reason I love it here is because of the people. Our employees are some of the kindest, funniest, and most hard-working people I have ever met! The people make this place such an incredible environment to be in every day. Absolutely the best company I have ever worked for!",
+		"order": 3
+	},
+	{
+		"name_full": "Stephanie O’Loughlin",
+		"image": "stephanie_thumbnail",
+		"position": "CX Support Specialist",
+		"quote": "Working at Smashtech isn’t a job, it’s a career. It’s a place to learn and grow while striving to be better every day. I’m becoming the best person I can be – within these walls and out.",
+		"order": 4
+	},
+	{
+		"name_full": "Hans Grimm",
+		"image": "hans_thumbnail",
+		"position": "Controller",
+		"quote": "I really do look forward to coming to work every day. The benefits and the work environment are awesome, but it’s the people that make it one of a kind. The talent is first-class and the passion is contagious! Management gives our professionals the encouragement, the tools and the independence to make their ideas for the company and their careers a reality.",
+		"order": 5
+	},
+	{
+		"name_full": "Patrick Fulgham",
+		"image": "pat_thumbnail",
+		"position": "Relationship Manager",
+		"quote": "Smashtech hires great people and gives them autonomy and the freedom to be themselves. It’s culturally awesome! We know that customers will never love a company until the employees love it first. We take pride in what we do!",
+		"order": 6
+	}
+]

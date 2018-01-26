@@ -1,0 +1,48 @@
+extends layout
+
+block content
+
+	.container.content-padding
+		.row
+			.col-md-9
+				each article, i in pugArticles
+					-var articleImage = article.image
+					if !article.image
+						-var articleImage = 'image_not_found.png'
+					article.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized
+						.post-thumbnail
+							a(href=pugDomainUrl + '/news/' + article.slug + '/')
+								img.attachment-twentyseventeen-featured-image.size-twentyseventeen-featured-image.wp-post-image(src=pugDomainUrl + '/images/' + articleImage, alt='')
+						// .post-thumbnail
+						.featured-image
+						header.entry-header
+							a.black-text(href=pugDomainUrl + '/news/' + article.slug + '/')
+								h2.content-sub-heading
+									| #{article.title}
+						// .entry-header
+						.entry-meta
+							p
+								small
+									i.fa.fa-calendar(aria-hidden='true')
+									|  #{pugFormatDate(article.date_pub)}
+									// <i class="fa fa-pencil" aria-hidden="true"></i>
+						.entry-content
+							p
+								| #{article.summary}… 
+								a.btn.btn-lg.btn-outline-black(href=pugDomainUrl + '/news/' + article.slug + '/')
+									| Read More 
+									i.fa.fa-caret-right(aria-hidden='true')
+						// .entry-content
+						//
+							Add the pagination functions here
+							<div class="nav-previous alignleft"></div>
+							<div class="nav-next alignright"></div>
+					// #post-##
+
+				// end col 9
+			#blog-sidebar.col-md-3.lt-grey-bg(role='complementary')
+				
+				include sidebar.pug
+
+			// end col 3
+		// end row

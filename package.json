@@ -1,0 +1,17 @@
+{
+  "name": "smashtech",
+  "version": "1.0.0",
+  "description": "Demo of Smashtech.com production website rebuilt using Node, Express, MongoDB and Jade/Pug templates.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Jeff Todnem",
+  "author_email": "jtodnem@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.13",
+    "pug": "^2.0.0-rc.4"
+  }
+}

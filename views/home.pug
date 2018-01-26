@@ -1,0 +1,446 @@
+extends layout
+
+block content
+
+	section#home-hero
+		.container
+			.row
+				.col-md-12.text-center.white-text
+					header.hero-heading
+						h1.main-heading We are Smashtech
+						h2.sub-heading
+							| We’re on a mission to disrupt the health and wellness industry by creating and maintaining full control over our own ecommerce brands and products.
+				// end col 12
+			// end row
+		// end container
+	// end home header
+	section#home-intro.content-padding
+		.container
+			.row
+				.col-md-12
+					h2.content-heading.text-center.no-bottom-margin We’re technology-driven, innovation-led, and results-focused.
+	section#employee-tiles
+		.container-fluid
+			#smash-owners.row.no-gutters
+
+				//- #a-o-combo.col-xs-12.col-sm-12.col-md-12.col-lg-6
+				//- 	.smash-employee
+				//- 		img.img-responsive.fun-img(src=pugDomainUrl + '/images/a_o_1600_fun.jpg', alt='Omar & Anwar fun')
+				//- 		.business-img
+				//- 			img.img-responsive(src=pugDomainUrl + '/images/a_o_1600_business.jpg', alt='Omar & Anwar business')
+				//- 			p.employee-name Omar Imani
+				//- 			p.employee-title Co-founder & Owner
+				//- 			p.employee-name-2 Anwar Husain
+				//- 			p.employee-title-2 Co-founder & Owner
+				//- 		// end business img
+				//- 	// end smash employee
+				//- // end col 6
+
+
+
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3
+					.smash-employee
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/omar_business_fun_637.jpg', alt='Omar fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/omar_business_fun_637.jpg', alt='Omar business')
+							p.employee-name Omar Imani
+							p.employee-title Co-founder & Owner
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3
+					.smash-employee
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/anwar_business_fun_637.jpg', alt='Anwar fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/anwar_business_fun_637.jpg', alt='Anwar business')
+							p.employee-name Anwar Husain
+							p.employee-title Co-founder & Owner
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-12.col-md-12.col-lg-6
+					.home-quote.black-bg
+						h2.sub-heading.white-text(style='margin-top: 0;') In-house and in control
+						p.white-text
+							| We make living a healthy lifestyle simple, but how we do it is a far better story. When we say we create brands, we mean we actually dream them up and turn them into ecommerce sensations by managing everything in house.
+						p
+						p.white-text
+							| We do it all from research & development, manufacturing, design, branding, marketing, media, sales, and customer service, for every brand we create. It may seem like a mouthful, but we don’t want anything to slow us down, hinder our agility, or tarnish our customer experience, and the best way to do that is to do it yourself. We’re not an agency, we don’t have clients, we simply create, manage, and own everything we touch.
+						p.white-text
+							| The world is evolving fast, and we’re in the driver’s seat. We’re one of the fastest growing companies in San Diego, and because of our amazing culture, we’re featured by 
+							a(href='https://www.inc.com/profile/smashtech', target='_blank', style='text-decoration: underline; color: #fff;') Inc. Magazine
+							|  as one of the Top 50 Best Workplaces in the country. And this is just the beginning.
+						a.btn.btn-lg.btn-outline-white(href='/company') About Us »
+					// end black-bg
+				// end col 6
+			// end row
+			#smash-leadership.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/rob_fun637.jpg', alt='Rob fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/rob_business_637.jpg', alt='Rob business')
+							p.employee-name Rob Macabante
+							p.employee-title Director of CX & Human Development
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/dawn_fun_637.jpg', alt='Dawn fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/dawn_business_637.jpg', alt='Dawn business')
+							p.employee-name Dawn Marie Moskop
+							p.employee-title Creative Director
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/kendra_fun_637.jpg', alt='Kendra fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/kendra_business_637.jpg', alt='Kendra business')
+							p.employee-name Kendra Pennington
+							p.employee-title Director of Customer Acquisition
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/zach_fun_637.jpg', alt='Zach fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/zach_business_637.jpg', alt='Zach business')
+							p.employee-name Zach Scalice
+							p.employee-title Director of Network Operations
+						// end business
+					// end smash employee
+				// end col 3
+			// end row
+			#leadership-meeting.row.no-gutters.module-break.timeline-block
+				.container
+					.col-xs-12.col-sm-12.col-md-12.col-lg-12.timeline-content
+						header.hero-heading.text-center.white-text
+							h1.main-heading Direct Response Drives Us.
+							h2.sub-heading(style='margin-bottom: 0;')
+								| Everything we do is designed to evoke a response and compel people to take action. All our decisions are deliberate, specific, trackable, and measurable.
+					// end col 12
+				// end container
+			// end row
+			.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/alex_fun_637.jpg', alt='Alex fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/alex_business_637.jpg', alt='Alex business')
+							p.employee-name Alex Dos Santos
+							p.employee-title Media Buyer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/britney_fun_637.jpg', alt='Britney fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/britney_business_637.jpg', alt='Britney business')
+							p.employee-name Britney Herzbrun
+							p.employee-title Account Manager
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/claudia_fun_637.jpg', alt='Claudia fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/claudia_business_637.jpg', alt='Claudia business')
+							p.employee-name Claudia Duran
+							p.employee-title Media Buyer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/karly_fun_637.jpg', alt='Karly fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/karly_business_637.jpg', alt='Karly business')
+							p.employee-name Karly Kenyon
+							p.employee-title Media Buyer
+						// end business
+					// end smash employee
+				// end col 3
+			// end row
+			.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/jp_fun_637.jpg', alt='JP fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/jp_business_637.jpg', alt='JP business')
+							p.employee-name Johnny Philavanh
+							p.employee-title Back-End Web Developer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/braxton_fun_637.jpg', alt='Braxton fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/braxton_business_637.jpg', alt='Braxton business')
+							p.employee-name Braxton Corbin
+							p.employee-title Supply Chain Coordinator
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/briana_fun_637.jpg', alt='Briana fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/briana_business_637.jpg', alt='Briana business')
+							p.employee-name Briana Estolano
+							p.employee-title CX Advocate
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/stephanie_fun_637.jpg', alt='Stephanie fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/stephanie_business_637.jpg', alt='Stephanie business')
+							p.employee-name Stephanie O’Loughlin
+							p.employee-title CX Support Specialist
+						// end business
+					// end smash employee
+				// end col 3
+			// end row
+			.row.no-gutters.module-break.timeline-block.callout-content-padding.black-bg
+				.container
+					.col-xs-12.col-sm-12.col-md-12.col-lg-12.timeline-content
+						header.hero-heading.text-center.white-text
+							h1.main-heading A Culture of Performance.
+							h2.sub-heading(style='margin-bottom: 0;')
+								| At Smashtech, results speak louder than words and we believe in rewarding performance. There are no egos, no divas, no room for politics. Only ambitious, talented, a-players who do their best work.
+					// end col 12
+				// end container
+			// end row
+			.row.no-gutters.stacked-two-column
+				.col-xs-12.col-sm-12.col-md-12.col-lg-6.stacked-parent
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6.stacked.timeline-block
+						.smash-employee.timeline-content
+							img.img-responsive.fun-img(src=pugDomainUrl + '/images/emily_fun_637.jpg', alt='Emily fun')
+							.business-img
+								img.img-responsive(src=pugDomainUrl + '/images/emily_business_637.jpg', alt='Emily business')
+								p.employee-name Emily Holmes
+								p.employee-title Jr. Email Marketing Specialist
+							// end business
+						// end smash employee
+					// end col 3
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6.stacked.timeline-block
+						.smash-employee.timeline-content
+							img.img-responsive.fun-img(src=pugDomainUrl + '/images/terry_fun_637.jpg', alt='Terry fun')
+							.business-img
+								img.img-responsive(src=pugDomainUrl + '/images/terry_business_637.jpg', alt='Terry business')
+								p.employee-name Terry Wood
+								p.employee-title HR Administrator
+							// end business
+						// end smash employee
+					// end col 3
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6.stacked.timeline-block
+						.smash-employee.timeline-content
+							img.img-responsive.fun-img(src=pugDomainUrl + '/images/kylie_fun_637.jpg', alt='Kylie fun')
+							.business-img
+								img.img-responsive(src=pugDomainUrl + '/images/kylie_business_637.jpg', alt='Kylie business')
+								p.employee-name Kylie Carrasco
+								p.employee-title Jr. Content Producer
+						// end smash employee
+					// end col 3
+					.col-xs-12.col-sm-6.col-md-6.col-lg-6.stacked.timeline-block
+						.smash-employee.timeline-content
+							img.img-responsive.fun-img(src=pugDomainUrl + '/images/tia_fun_637.jpg', alt='Tia business')
+							.business-img
+								img.img-responsive(src=pugDomainUrl + '/images/tia_business_637.jpg', alt='Tia business')
+								p.employee-name Tia McDonald
+								p.employee-title Influencer Outreach
+							// end business
+						// end smash employee
+					// end col 3
+				// end col 6
+				.col-xs-12.col-sm-12.col-md-12.col-lg-6.hidden-xs.hidden-sm.two-row-height.timeline-block
+					.timeline-content
+						img.img-responsive(src=pugDomainUrl + '/images/outdoor_photoshoot_large-1.jpg', alt='Smashtech outdoor photo shoot')
+					// end timeline content
+				// end col 6
+			// end row
+			//
+				<div class="row no-gutters module-break timeline-block callout-content-padding black-bg">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 timeline-content">
+				<header class="hero-heading text-center white-text">
+				<h1 class="main-heading">We do everything in house</h1>
+				<h2 class="sub-heading" style="margin-bottom: 0;">From design, branding, sales, media, customer service, and beyond.</h2>
+				</header>
+				</div>
+				</div>
+			.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/hans_fun_637.jpg', alt='Hans fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/hans_business_637.jpg', alt='Hans business')
+							p.employee-name Hans Grimm
+							p.employee-title Sr. Accountant
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/clarissa_fun_637.jpg', alt='Clarissa fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/clarissa_business_637.jpg', alt='Clarissa business')
+							p.employee-name Clarissa Garcia
+							p.employee-title Account Manager
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/dan_fun_637.jpg', alt='Dan fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/dan_business_637.jpg', alt='Dan business')
+							p.employee-name Dan Brady
+							p.employee-title Account Manager
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/stephen_fun_637.jpg', alt='Stephen fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/stephen_business_637.jpg', alt='Stephen business')
+							p.employee-name Stephen Yu
+							p.employee-title Accounting Clerk
+						// end stephen
+					// end smash employee
+				// end col 3
+			// end row
+			.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/pat_fun_637.jpg', alt='Pat fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/pat_business_637.jpg', alt='Pat business')
+							p.employee-name Patrick Fulgham
+							p.employee-title Account Manager
+						// end business img
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/joaquin_fun_637.jpg', alt='Joaquin fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/joaquin_business_637.jpg', alt='Joaquin business')
+							p.employee-name Joaquin Suarez
+							p.employee-title Sr. Graphic Designer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/kayla_fun_637.jpg', alt='Kayla fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/kayla_business_637.jpg', alt='Kayla business')
+							p.employee-name Kayla Hodgson
+							p.employee-title Executive Administrative Assistant 
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/chris_fun_637.jpg', alt='Chris fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/chris_business_637.jpg', alt='Chris business')
+							p.employee-name Chris Howell
+							p.employee-title Sr. Relationship Manager
+					// end smash employee
+				// end col 3
+			// end row
+			#office-shot.row.no-gutters.module-break.timeline-block
+				.container
+					.col-md-12.text-center.white-text.timeline-content
+						header.hero-heading
+							h1.main-heading First Who, Then What.
+							h2.sub-heading
+								| We believe that having the right people in the right seats is the driving force behind our success.If we have the right people, nothing can stop us from innovating, disrupting, and revamping industries.
+					// end col 12
+				// end container
+			// end row
+			.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/missy_fun_637.jpg', alt='Missy fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/missy_business_637.jpg', alt='Missy business')
+							p.employee-name Missy Galang
+							p.employee-title Brand Strategist
+						// business img
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/katherine_fun_637.jpg', alt='Katherine fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/katherine_business_637.jpg', alt='Katherine business')
+							p.employee-name Katherine Timmerman
+							p.employee-title Media Buyer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/roger_fun_637.jpg', alt='Roger fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/roger_business_637.jpg', alt='Roger business')
+							p.employee-name Roger Sanchez
+							p.employee-title Front-End Web Developer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/dina_fun_637.jpg', alt='Dina fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/dina_business_637.jpg', alt='Dina business')
+							p.employee-name Dina Gansevich
+							p.employee-title Media Buyer
+						// end business
+					// end smash employee
+				// end col 3
+			// end row
+			#last-employee-row.row.no-gutters
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/dylan_fun_637.jpg', alt='Dylan fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/dylan_business_637.jpg', alt='Dylan business')
+							p.employee-name Dylan Ralston
+							p.employee-title Lead Developer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-3.timeline-block
+					.smash-employee.timeline-content
+						img.img-responsive.fun-img(src=pugDomainUrl + '/images/jeff_fun_637.jpg', alt='Jeff fun')
+						.business-img
+							img.img-responsive(src=pugDomainUrl + '/images/jeff_business_637.jpg', alt='Jeff business')
+							p.employee-name Jeff Todnem
+							p.employee-title Senior Developer
+						// end business
+					// end smash employee
+				// end col 3
+				.col-xs-12.col-sm-6.col-md-6.col-lg-6.timeline-block
+					#home-opening.smash-employee.timeline-content.black-bg
+						h2.sub-heading.white-text Want to be part of the Smash Fam?
+						p.white-text
+							| You’re smart, passionate, fun, and on a mission to change the world. That’s what we’re looking for! We’re always on the lookout for amazing talent; check out our current openings to see if you might be a good fit.
+						a.btn.btn-lg.btn-outline-white(href='careers') Browse openings
+					// end smash employee
+				// end col 3
+			// end row
+		// end fluid
+	// end employee tiles

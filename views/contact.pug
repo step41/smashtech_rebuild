@@ -1,0 +1,86 @@
+extends layout
+
+block content
+
+	section#contact-hero
+	// end section
+	section#contact-details.content-padding
+		.container
+			.row
+				.col-xs-12.col-sm-12.col-md-5
+					h2.content-sub-heading Contact Smashtech
+					p
+						i.fa.fa-envelope(aria-hidden='true')
+						a(href='mailto:kayla@smashtech.com') hello@smashtech.com
+					p
+						i.fa.fa-phone(aria-hidden='true')
+						a(href='tel:888-657-1779') 888-657-1779
+					p
+						i.fa.fa-home(aria-hidden='true')
+						|  530 B Street #1500 San Diego, CA 92101
+				// end col 5
+				.col-xs-12.col-sm-12.col-md-7
+					h2.content-sub-heading Send us a message
+					#wpcf7-f275-p12-o1.wpcf7(role='form', lang='en-US', dir='ltr')
+						.screen-reader-response
+						form.wpcf7-form(method='post', novalidate='novalidate')
+							div(style='display: none;')
+								input(type='hidden', name='_wpcf7', value='275')
+								input(type='hidden', name='_wpcf7_version', value='4.8')
+								input(type='hidden', name='_wpcf7_locale', value='en_US')
+								input(type='hidden', name='_wpcf7_unit_tag', value='wpcf7-f275-p12-o1')
+								input(type='hidden', name='_wpcf7_container_post', value='12')
+								input(type='hidden', name='_wpcf7_nonce', value='8df7410220')
+							p.col-xs-12.col-sm-12.col-md-6
+								label
+									| Name (required)
+									br
+									span.wpcf7-form-control-wrap.your-name
+										input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(type='text', name='your-name', value='', size='40', aria-required='true', aria-invalid='false')
+							p.col-xs-12.col-sm-12.col-md-6
+								label
+									| Email (required)
+									br
+									span.wpcf7-form-control-wrap.your-email
+										input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email(type='email', name='your-email', value='', size='40', aria-required='true', aria-invalid='false')
+							p.col-xs-12.col-sm-12.col-md-6
+								label
+									| Phone Number
+									br
+									span.wpcf7-form-control-wrap.your-phone-number
+										input.wpcf7-form-control.wpcf7-text(type='text', name='your-phone-number', value='', size='40', aria-invalid='false')
+							p.col-xs-12.col-sm-12.col-md-6
+								label
+									| Subject
+									br
+									span.wpcf7-form-control-wrap.your-subject
+										input.wpcf7-form-control.wpcf7-text(type='text', name='your-subject', value='', size='40', aria-invalid='false')
+							p.col-xs-12.col-sm-12.col-md-12
+								label
+									| Message
+									br
+									span.wpcf7-form-control-wrap.your-message
+										textarea.wpcf7-form-control.wpcf7-textarea(name='your-message', cols='40', rows='10', aria-invalid='false')
+							p.col-xs-12.col-sm-12.col-md-6
+								input.wpcf7-form-control.wpcf7-submit(type='button', value='Send')
+								span.ajax-loader
+							.wpcf7-response-output.wpcf7-display-none
+				// end col 7
+			// end row
+		// end container
+	// end section
+	section#contact-collage
+		.container-fluid
+			.row.no-gutters
+				.col-xs-12.col-sm-4.col-md-4
+					img.img-responsive(src=pugDomainUrl + '/images/bag_toss.jpg')
+				// end col 4
+				.col-xs-12.col-sm-4.col-md-4
+					img.img-responsive(src=pugDomainUrl + '/images/smash_sign.jpg')
+				// end col 4
+				.col-xs-12.col-sm-4.col-md-4
+					img.img-responsive(src=pugDomainUrl + '/images/customer_service.jpg')
+				// end col 4
+			// no gutters
+		// end container fluid
+	// end section

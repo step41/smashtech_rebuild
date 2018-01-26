@@ -1,0 +1,49 @@
+if pugArticles
+	#recent-posts-3.widget.widget_recent_entries
+		h4.widget-title Recent Posts
+		ul
+			each article, i in pugArticles
+				if i < 5
+					li
+						a(href=pugDomainUrl + '/news/' + article.slug + '/')
+							| #{article.title}
+#text-2.widget.widget_text
+	h4.widget-title Social
+	.textwidget
+		#sb_instagram.sbi.sbi_col_2.sbi_medium(style='width:100%; padding-bottom: 10px; ', data-id='1836153084', data-num='4', data-res='auto', data-cols='2', data-options='{"sortby": "none", "headercolor": "", "imagepadding": "5"}')
+			.sb_instagram_header(style='padding: 10px; padding-bottom: 0;')
+				a.sbi_header_link(href='http://instagram.com/smashtech', target='_blank', title='@smashtech')
+					.sbi_header_text
+						h3 @smashtech
+						p.sbi_bio
+							| Top 50 Best Workplaces - Inc. Magazine
+							| Best Places to Work - SDBJ
+							| We build brands that make living a healthy lifestyle simple.
+							| #smashtech
+					.sbi_header_img
+						.sbi_header_img_hover
+							i
+						img(src='https://scontent.cdninstagram.com/t51.2885-19/s150x150/17882586_1435009983216836_8630271236921884672_a.jpg', alt='Smashtech™', width='50', height='50')
+			#sbi_images(style='padding: 5px;')
+				#sbi_1603263000328127219_1836153084.sbi_item.sbi_type_image(data-date='1505343864000')
+					.sbi_photo_wrap
+						a.sbi_photo(href='https://www.instagram.com/p/BY_7zRQFcLz/', target='_blank')
+							img(src='https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/c0.135.1080.1080/21689390_123547471702066_3308729091284271104_n.jpg', alt='We love to celebrate at Smashtech Today were having ice cream cake for Dans st year anniversary We love his positivity and collaborative spirit Hes always first to raise his hand when someone needs help Were happy youre part of the team and thank you for all that you do for us smashfam anniversary marketing', width='200', height='200')
+				#sbi_1598896058968540284_1836153084.sbi_item.sbi_type_image(data-date='1504823284000')
+					.sbi_photo_wrap
+						a.sbi_photo(href='https://www.instagram.com/p/BYwa36Ll4R8/', target='_blank')
+							img(src='https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/c267.0.1066.1066/21568536_465989040447728_3454903054753595392_n.jpg', alt='Todays an extra special day Were celebrating our CoFounder omarimani s Birthday Pandas Frenchie puppies balloons and cookies make today one of the best days at work  Thank you Omar for making Smashtech such an amazing place to work', width='200', height='200')
+				#sbi_1597494352065974481_1836153084.sbi_item.sbi_type_image(data-date='1504656188000')
+					.sbi_photo_wrap
+						a.sbi_photo(href='https://www.instagram.com/p/BYrcKY5ldDR/', target='_blank')
+							img(src='https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/c0.134.1080.1080/21371728_155906291658441_4375714841533349888_n.jpg', alt='Happy Birthday to our media buyer Alex who was one of the first few members of the Smashtech family He adds positivity fun and goofiness to our office daily and always has us laughing Thanks for growing your career with us and being a part of the Smashtech team  smashtech smashfam happybirthday', width='200', height='200')
+				#sbi_1593857650097881210_1836153084.sbi_item.sbi_type_video(data-date='1504222659000')
+					.sbi_photo_wrap
+						a.sbi_photo(href='https://www.instagram.com/p/BYehRaQn4B6/', target='_blank')
+							img(src='https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/c0.90.720.720/21294656_263961294097120_4661429608095154176_n.jpg', alt='Our Account Specialist Andrea just broke some major sales records today Her voice is music to our customers ears Thank your for constantly doing your best Beats for beating the odds headphones are for closers', width='200', height='200')
+							i.fa.fa-play.sbi_playbtn
+			#sbi_load
+				.sbi_follow_btn
+					a(href='http://instagram.com/smashtech', style='', target='_blank')
+						i.fa.fa-instagram
+						| Follow on Instagram

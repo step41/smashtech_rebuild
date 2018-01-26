@@ -1,0 +1,142 @@
+doctype html
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='en-US', prefix='og: http://ogp.me/ns#')  
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8(lang='en-US', prefix='og: http://ogp.me/ns#')  
+//if IE 8
+	html.no-js.lt-ie9(lang='en-US', prefix='og: http://ogp.me/ns#')  
+// [if gt IE 8] <!
+html.no-js(lang='en-US', prefix='og: http://ogp.me/ns#')
+	// <![endif]
+	head
+		meta(name='generator', content='Step41 LLC')
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title= pugPageTitle
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		meta(name='robots', content='NOINDEX, NOFOLLOW')
+		meta(name='description', content=pugPageDesc )
+		meta(name='description', content=pugPageDescLong)
+		link(rel='canonical', href=pugDomainUrl + '/')
+		meta(property='og:locale', content='en_US')
+		meta(property='og:type', content='website')
+		meta(property='og:title', content=pugCompanyName)
+		meta(property='og:description', content=pageDesc)
+		meta(property='og:url', content=pugDomainUrl)
+		meta(property='og:site_name', content=pugCompanyName)
+		meta(property='og:image', content=pugDomainUrl + '/images/smashtech_social_sharing.jpg')
+		meta(name='twitter:card', content='summary')
+		meta(name='twitter:description', content=pageDescLong)
+		meta(name='twitter:title', content=pugCompanyName)
+		meta(name='twitter:image', content=pugDomainUrl + '/images/smashtech_social_sharing.jpg')
+		script(type='application/ld+json').
+			{"@context":"http:\\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/smashtech.com\/","name":"Smashtech","potentialAction":{"@type":"SearchAction","target":"https:\/\/smashtech.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}
+		link(rel='dns-prefetch', href='//maxcdn.bootstrapcdn.com')
+		link(rel='dns-prefetch', href='//s.w.org')
+		link#contact-form-7-css(rel='stylesheet', href=pugDomainUrl + '/css/st_contact_form.css', type='text/css', media='all')
+		link#sb_instagram_styles-css(rel='stylesheet', href='/css/st_instagram.min.css', type='text/css', media='all')
+		link#sb_instagram_icons-css(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=4.6.3', type='text/css', media='all')
+		link#smashtech-main-css(rel='stylesheet', href=pugDomainUrl + '/css/st_main.css', type='text/css', media='all')
+		link#bootstrap-css(rel='stylesheet', href=pugDomainUrl + '/css/st_bootstrap.css', type='text/css', media='all')
+		link#font-awesome-css(rel='stylesheet', href=pugDomainUrl + '/css/st_font_awesome.css', type='text/css', media='all')
+		link#smashtech-layout-css(rel='stylesheet', href=pugDomainUrl + '/css/st_layout.css', type='text/css', media='all')
+		script(type='text/javascript', src=pugDomainUrl + '/js/jquery.js')
+		script(type='text/javascript', src=pugDomainUrl + '/js/jquery_migrate.min.js')
+		script(type='text/javascript', src=pugDomainUrl + '/js/retina_picturefill.min.js')
+		link(rel='https://api.w.org/', href=pugDomainUrl + '/wp-json/')
+		link(rel='shortlink', href=pugDomainUrl)
+		link(rel='shortcut icon', href=pugDomainUrl + '/images/smashtech_favicon.ico')
+		// media-queries.js (fallback)
+		//if lt IE 9
+			script(src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js')
+		// html5.js
+		//if lt IE 9
+			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+	body.page-template.page-template-page-full-width.page-template-page-full-width-php.page
+		header
+			nav#main-nav
+				.container
+					.row
+						.col-xs-8.col-sm-4.col-md-4
+							a.nav-logo(href='/')
+								img#nav-logo.img-responsive(srcset='/images/smashtech_logo.jpg, /images/smashtech_logo@2x.jpg 2x')
+						// end col 4
+						.col-xs-4.col-sm-8.col-md-8
+							.navbar-header
+								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#menu-main-nav', aria-expanded='false')
+									span.sr-only Toggle navigation
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+							// end navbar header
+						// end col 8
+						#menu-main-nav.col-xs-12.col-sm-8.col-md-8.collapse.navbar-collapse
+							.menu-container
+								ul#menu-main-nav-menu.menu.clearfix
+									li#menu-item-274.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-274
+										a(href=pugDomainUrl + '/company/') About Us
+									li#menu-item-30.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30
+										a(href=pugDomainUrl + '/careers/') Careers
+									li#menu-item-842.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-842
+										a(href=pugDomainUrl + '/news/') News
+									li#menu-item-24.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-24
+										a(href=pugDomainUrl + '/contact/') Contact
+						// end collapse
+					// end row
+				// end container
+			// end main nav
+		header.page-message-custom
+			.container
+				.row
+					.col-md-12
+						a(href="/downloads/smashtech_website_source_code.zip") Download Source Code
+					// end col 12
+				// end col row
+			// end container
+		main(role='main')
+			//- Begin Main Content Area 
+			if pugHeaderTitle
+				header.content-padding.black-bg
+					.container
+						.row
+							.col-md-12
+								h1.sub-heading.white-text.no-bottom-margin #{pugHeaderTitle}
+							// end col 12
+						// end col row
+					// end container
+			block content
+
+
+
+			//- End Main Content Area 
+		// end main
+		footer#footer(role='contentinfo')
+			.container
+				.row
+					#footer-logo.col-xs-12.col-sm-8.col-md-8.col-lg-8
+						img.img-responsive(srcset=pugDomainUrl + '/images/smashtech_logo_black.png, ' + pugDomainUrl + '/images/smashtech_logo_black@2x.png 2x')
+						p
+							small ©2015-2017 Smashtech. All rights reserved.
+					// end col 8
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4
+						ul#social-media-menu
+							li
+								a.fa.fa-facebook(href='https://www.facebook.com/smashtechagency/', target='_blank')
+							li
+								a.fa.fa-instagram(href='https://www.instagram.com/smashtech/', target='_blank')
+							// <li><a href="#" class="fa fa-youtube-play" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Follow us on YouTube"></a></li>
+					// end col 4
+				// end row
+			// end container
+		// end footer
+		//if lt IE 7 
+			script(src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js')
+			script.
+				window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})
+		script(type='text/javascript').
+			/* <![CDATA[ */
+			var sb_instagram_js_options = {"sb_instagram_at":"1836153084.3a81a9f.b9d167bf18c440ea83119c709521352e"};
+			/* ]]> */
+		script(type='text/javascript', src=pugDomainUrl + '/js/sb-instagram.min.js?ver=1.4.9')
+		script(type='text/javascript', src=pugDomainUrl + '/js/st_bootstrap.js')
+		script(type='text/javascript', src=pugDomainUrl + '/js/st_bootstrap_plugins.js')

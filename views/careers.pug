@@ -1,0 +1,135 @@
+extends layout
+
+block content
+
+	section#join-smash-team-hero
+		.container
+			.row
+				.col-md-12
+					header.hero-heading.text-center.white-text
+						h1.main-heading Best Places to Work
+						| co
+						img.img-responsive(srcset=pugDomainUrl + '/images/best_places_logos.png, ' + pugDomainUrl + '/images/best_places_logos@2x.png 2x')
+					// end hero heading
+				// end col 12
+			// end row
+		// end container
+	// end section
+	section.content-padding
+		.container
+			.row
+				.col-md-12
+					h2.sub-heading.text-center Working with us.
+					p
+						| We are energetic, ambitious, and creative individuals. Our team is the best reflection of our culture. Smashtech employees are energetic, ambitious, and creative individuals. You won’t find a more diversified group, and that’s just the way we like it.
+					p
+						| We firmly believe that who we have on board helps us reach where we want to be. We grow as a team, that’s why we promote information sharing, continuing education, and group discussions.
+					p
+						| When we’re not busy building our brands, you can find us sharing a meal together, playing an impromptu game of hacky sack, or sharing awesome ideas at one of our Smash socials. We’re serious about enjoying what we do, and it shows in our results.
+				// end col-md-12
+			// end row
+		// end container
+	// end section
+	section.content-padding.lt-grey-bg
+		.container
+			.row
+				.col-md-12
+					h2.sub-heading.text-center Our open positions
+				// end col 12
+			// end row
+			each career, i in pugCareers
+				!= pugGetCareerWrap(career, pugCareerDepartment, i)
+
+				include career.pug
+
+				-var pugCareerDepartment = career.department;
+
+			// end row
+		// end container
+	// end section
+	section.content-padding.text-center
+		.container
+			#benefits-row-one.row
+				.col-md-12
+					h2.sub-heading.text-center Smashtech employee benefits
+					p
+						| Employees get comprehensive health, dental, and vision benefits packages and 401k matching. Plus, employees enjoy flexible working hours, flexible time off, and more! See what makes our workplace one of the best nationwide.
+				// end col 12
+				.timeline-block
+					.col-xs-12.col-sm-6.col-md-6.employee-benefit.timeline-content.center.bounce-in
+						img.img-resposnive(srcset=pugDomainUrl + '/images/healthy_balance.png, ' + pugDomainUrl + '/images/healthy_balance@2x.png 2x')
+						h3.content-sub-heading A healthy balance.
+						p.smaller-text
+							| We have the happiest, healthiest employees. Our team members get free access to one of the finest fitness facilities in San Diego, Fit Athletic Club. Company bikes are always on the ready for those who want to cruise around downtown and employees can take in the views on our beautiful 3rd floor outdoor walking park.
+					// end col md 6
+				// end timeline block
+				.timeline-block
+					.col-xs-12.col-sm-6.col-md-6.employee-benefit.timeline-content.center.bounce-in
+						img.img-resposnive(srcset=pugDomainUrl + '/images/cutlery_icon_grey.png, ' + pugDomainUrl + '/images/cutlery_icon_grey@2x.png 2x')
+						h3.content-sub-heading Who doesn’t love food?
+						p.smaller-text
+							| Fill yourself with goodness. Our pantry is always fully-stocked with healthy snacks and drinks. We also enjoy free lunch on Fridays where we celebrate a productive week with delicious catered foods from our favorite local restaurants. And we top it off with games of bag toss and hackey sack, dancing, and wonderful conversations.
+					// end col md 6
+				// end timeline block
+			// end row
+			#benefits-row-two.row
+				.timeline-block
+					.col-xs-12.col-sm-6.col-md-6.employee-benefit.timeline-content.center.bounce-in
+						img.img-responsive(srcset=pugDomainUrl + '/images/martini_icon_grey.png, ' + pugDomainUrl + '/images/martini_icon_grey@2x.png 2x')
+						h3.content-sub-heading Lets get social.
+						p.smaller-text
+							| We take happy hours to the next level. One of the things we look forward to is our monthly socials, and we always have something exciting planned: high speed go-kart racing, dodgeball competitions at a trampoline park, line dancing, or cheering on our beloved Padres at Petco Park…we play as hard as we work.
+					// end col md 6
+				// end timeline block
+				.timeline-block
+					.col-xs-12.col-sm-6.col-md-6.employee-benefit.timeline-content.center.bounce-in
+						img.img-responsive(srcset=pugDomainUrl + '/images/travel_icon.png, ' + pugDomainUrl + '/images/travel_icon@2x.png 2x')
+						h3.content-sub-heading Love to travel? So do we.
+						p.smaller-text.paragraph-padding
+							| See the world with us! We take all-expense paid trips to the most breathtaking destinations every time we reach a company milestone. Past company trips have been to Cabo San Lucas, Big Bear Mountain, Las Vegas, and New York.
+					// end col md 6
+				// end timeline block
+			// end benefits row
+			#benefits-row-three.row
+				.timeline-block
+					.col-xs-12.col-sm-6.col-md-6.employee-benefit.timeline-content.center.bounce-in
+						img.img-responsive(srcset=pugDomainUrl + '/images/parking_icon.png, ' + pugDomainUrl + '/images/parking_icon@2x.png 2x')
+						h3.content-sub-heading Parking? No problem.
+						p.smaller-text
+							| Never worry about parking downtown. We’ve got you covered with free monthly parking and discounts on public transportation.
+					// end col md 6
+				// end timeline block
+				.timeline-block
+					.col-xs-12.col-sm-6.col-md-6.employee-benefit.timeline-content.center.bounce-in
+						img.img-responsive(srcset=pugDomainUrl + '/images/learning_icon.png, ' + pugDomainUrl + '/images/learning_icon@2x.png 2x')
+						h3.content-sub-heading Keep on learning.
+						p.smaller-text
+							| We ensure our team’s personal and professional growth. We provide unlimited access to top-notch online courses taught by industry experts, sponsor trips to global marketing and tech conferences, have regular leadership and management training, and provide a personalized growth plan with individual coaching to all employees.
+					// end col md 6
+				// end timeline block
+			// end benefits row
+		// end container
+	// end section
+	section.content-padding.lt-grey-bg
+		.container
+			.row
+				.col-md-12
+					h2.sub-heading.text-center What our employees say
+				// end col 12
+			// end row
+			each careerQuote, i in pugCareerQuotes
+				.row.employee-testimonial
+					.col-xs-12.col-sm-12.col-md-1.thumb
+						img.img-responsive(srcset=pugDomainUrl + '/images/' + careerQuote.image + '.png, ' + pugDomainUrl + '/images/' + careerQuote.image + '@2x.png 2x')
+					// end col 1
+					.col-xs-12.col-sm-11.col-md-11
+						p
+							span.left-quote “
+							| #{careerQuote.quote}
+							span.right-quote “
+						p
+							label #{careerQuote.name_full} | #{careerQuote.position}
+					// end col 11
+				// end row
+		// end container
+	// end section

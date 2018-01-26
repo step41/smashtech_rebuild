@@ -1,0 +1,140 @@
+#home-hero {
+	background: url(/images/we_are_smashtech_hero.jpg) no-repeat;
+	height: 435px;
+}
+#about-hero {
+	background: url(/images/about_hero3.jpg);
+	height: 531px;
+	background-position: 50% 0;
+}
+#join-smash-team-hero {
+	background: url(/images/careers_1920x531.jpg) no-repeat; 
+	height: 531px;
+}
+#contact-hero {
+	background: url(/images/contact_hero-1.jpg) no-repeat;
+	height: 531px;
+	background-position: 50% 0;
+}
+@media (min-width: 1921px) {
+	#home-hero {
+		background: url(/images/home_hero_2600.jpg) no-repeat;
+		height: 535px;
+	}
+	#about-hero {
+		background: url(/images/omar_anwar_2600.jpg) no-repeat;
+		height: 535px;
+		background-position: 50% 0;
+	}
+	#join-smash-team-hero {
+		background: url(/images/careers_2600x531_v2.jpg);
+		height: 535px;
+	}
+	#contact-hero {
+		background: url(/images/contact_2600.jpg) no-repeat;
+		height: 535px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+	#about-hero {
+		background: url(/images/omar_anwar_1600x531.jpg) no-repeat;
+		height: 531px;
+		background-position: 50% 0;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#home-hero {
+		background: url(/images/we_are_smashtech_hero_339px.jpg) no-repeat;
+		height: 339px;
+	}
+		#about-hero {
+		background: url(/images/about_hero_339px.jpg) no-repeat;
+		height: 339px;
+		background-position: 50% 0;
+	}
+	#join-smash-team-hero {
+		background: url(/images/careers_1200x339.jpg) no-repeat;
+		height: 339px;
+		background-position: 35% 0;
+	}
+}	
+@media (min-width: 768px) and (max-width: 991px) { 
+	#home-hero {
+		background: url(/images/we_are_smashtech_hero_339px.jpg) no-repeat;
+		height: 339px;
+	}
+	#about-hero {
+		background: url(/images/omar_anwar_991x339.jpg) no-repeat;
+		height: 339px;
+		background-position: 50% 0;
+	}
+	#join-smash-team-hero {
+		background: url(/images/careers_991x339.jpg) no-repeat;
+		height: 339px;
+		background-position: 35% 0;
+	}
+}
+@media (max-width: 767px) { 
+	#home-hero {
+		background: url(/images/we_are_smashtech_hero_767x192.jpg) no-repeat;
+		height: 192px;
+		background-position: 50% 0;
+	}
+	#about-hero {
+		background: url(/images/about_hero_767x192.jpg) no-repeat;
+		height: 192px;
+		background-position: 50% 0;
+	}
+	#join-smash-team-hero {
+		background: url(/images/careers_767x192.jpg) no-repeat;
+		height: 192px;
+	}
+	#contact-hero {
+		background: url(/images/contact_767x192.jpg) no-repeat;
+		height: 192px;
+		background-position: 50%;
+	}
+}
+@media (max-width: 480px) {
+	#about-hero {
+		background: url(/images/omar_anwar_480x192.jpg);
+		height: 192px;
+		background-position: 50% 0;
+	}
+	#join-smash-team-hero {
+		background: url(/images/careers_479x192.jpg) no-repeat;
+		height: 139px;
+		background-position: 10% 0;
+	}
+	#contact-hero {
+		background: url(/images/contact_480x192.jpg) no-repeat;
+		height: 139px;
+		background-position: 50%;
+	}
+}
+@media (max-width: 321px) { 
+	#about-hero {
+		background: url(/images/about_hero_320x139.jpg) no-repeat;
+		height: 139px;
+	}
+	#contact-hero {
+		background: url(/images/contact_320x192.jpg) no-repeat;
+		height: 139px;
+		background-position: 50%;
+	}
+}
+.page-message-custom {
+	background-color: #f5f5f5;
+	border-bottom: 1px #ddd dotted;
+	border-top: 1px #ddd dotted;
+	font-size: 150% !important;
+	padding: 1em;
+	text-align: left;
+}
+.page-message-custom a,
+.page-message-custom a:hover,
+.page-message-custom a:visited
+{
+	color: #337ab7;
+	text-decoration: none;
+}
